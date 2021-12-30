@@ -1,0 +1,64 @@
+{
+  "pytania": [
+     {
+        "tresc":"Który kraj ma największą liczbę ludności?: ",
+        "odp":[
+           "Francja ",
+           "Niemcy ",
+           "Holandia",
+           "Kolumbia "
+        ],
+        "odp_poprawna":"B"
+     },
+     {
+        "tresc":"Za króla Sasa jedz, pij i popuszczaj pasa” to szlacheckie przysłowie opiewające beztroskę i dobrobyt czasów, gdy w Rzeczypospolitej panowali królowie dynastii: ",
+        "odp":[
+           "Wettynow ",
+           "Jagiellonów ",
+           "Piastów",
+           "Wazów"
+        ],
+        "odp_poprawna":"A"
+     },
+     {
+        "tresc":"Ile jest kilometrów dróg autostrad i dróg ekspresowych w Polsce? ",
+        "odp":[
+           "ok. 2000 km ",
+           "ok. 4000 km ",
+           "ok. 6000 km",
+           "ok. 8000 km"
+        ],
+        "odp_poprawna":"D"
+     },
+     {
+        "tresc":"Co oznacza słowno 'downsizing'?",
+        "odp":[
+           "dążenie do kupowania mniejszych rozmiarów ubrań ",
+           "dążenie do konsumpcji mniejszej ilości jedzenia ",
+           "dążenie do zastępowania silników o określonej pojemności skokowej, jednostkami o mniejszej pojemności",
+           "dążenie do zużywania mniejszej ilości energii elekrycznej przez maszynki do mielenia mięsa"
+        ],
+        "odp_poprawna":"C"
+     },
+     {
+        "tresc":"W którym roku odbyły się igrzyska olimpijskie w Atenach?",
+        "odp":[
+           "1896 ",
+           "1912 ",
+           "1952",
+           "1996"
+        ],
+        "odp_poprawna":"A"
+     },
+     {
+        "tresc":"Dynak to: ",
+        "odp":[
+           "wieś sąsiadująca z Wisłą ",
+           "wieś sąsiadująca z Mielnem ",
+           "wieś sąsiadująca z Parciakami",
+           "wieś sąsiadująca z Imielinem"
+        ],
+        "odp_poprawna":"C"
+     }
+  ]
+}

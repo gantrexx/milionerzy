@@ -1,0 +1,24 @@
+{
+  "pytania": [
+     {
+        "tresc":"Sport wodny uprawiany na desce z żaglem to: ",
+        "odp":[
+           "skateboard ",
+           "surfing ",
+           "windsurfin",
+           "bojery "
+        ],
+        "odp_poprawna":"C"
+     },
+     {
+        "tresc":"Kto był prezydentem Rzeczypospolitej Polskiej bezpośrednio przed Lechem Wałęsą ? ",
+        "odp":[
+           "Czesław Kiszczak ",
+           "Mieczysław Rakowski ",
+           "Wojciech Jaruzelsk",
+           "Aleksander Kwaśniewski "
+        ],
+        "odp_poprawna":"C"
+     }
+  ]
+}
