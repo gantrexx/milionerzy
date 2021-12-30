@@ -61,13 +61,15 @@ class Game:
                 "change": True,
             }
             self.used_questions = []
+            self.should_pick_question = True
         elif game_data:
             print(game_data)
             self.user=game_data["user"]
             self.n=game_data["n"]
             self.available_rescue=game_data["available_rescue"]
             self.used_questions=game_data["used_questions_id"]
-            self.chosen_question=game_data["chosen_question_id"]
+            self.chosen_question=self.questions[game_data["chosen_question_id"]]
+            self.should_pick_question = False
 
     def check_answer(self, response):
         # checking correct answer
@@ -192,7 +194,10 @@ class Game:
                 return
             os.system("clear")
             print(f'{bcolors.HEADER} Pytanie nr {self.n + 1} za {prize[self.n]} złotych| {bcolors.ENDC}')
-            self.chosen_question=self.pick_question()
+            if self.should_pick_question:
+                self.chosen_question=self.pick_question()
+            else:
+                self.should_pick_question = True
             print(f'{bcolors.BOLD}{self.chosen_question}{bcolors.ENDC}')
             print("Dostępne koła ratunkowe:")
             if self.available_rescue["change"]:
@@ -208,15 +213,15 @@ class Game:
                 return
 
 def game_load(user):
-    game_save = open('game_save.json', 'r')
-    saves=json.load(game_save)
-    game_save.close()
+    # game_save = open('game_save.json', 'r')
+    # saves=json.load(game_save)
+    # game_save.close()
 
-    game_save = open('game_save.json', 'w')
-    saves["dumps"][user]["loaded"]="1"
+    # game_save = open('game_save.json', 'w')
+    # saves["dumps"][user]["loaded"]=1
 
-    json.dump(saves, game_save, indent = 6)
-    game_save.close()
+    # json.dump(saves, game_save, indent = 6)
+    # game_save.close()
 
     with open("game_save.json") as game_load:
         load_x=json.load(game_load)
@@ -229,7 +234,7 @@ if __name__ == "__main__":
     user=input("Podaj swoje imie: ")
     game_data=game_load(user)
     if game_data:
-        game=Game('pytania_wlasne.json',game_data=game_load(user))
+        game=Game('pytania_wlasne.json',game_data=game_data)
     else:
         game=Game('pytania_wlasne.json',user=user)
     game.play()
